@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_medium">
+
+        <ImageView
+            android:layout_width="@dimen/spacing_large"
+            android:layout_height="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_medium"
+            android:src="@drawable/ic_place"
+            android:tint="@color/grey_80" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_info"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="@dimen/spacing_mlarge"
+            android:src="@drawable/ic_edit_deliver" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_mxlarge"
+        android:text="David Wolff | (+84) 389 283 448"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/grey_60" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_mxlarge"
+        android:text="hoangspidey@gmail.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/grey_60" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_mxlarge"
+        android:maxLines="3"
+        android:text="43 Nguyen Chi Thanh, Ba Dinh, Ha Noi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/grey_60" />
+
+    <LinearLayout
+        android:id="@+id/lyt_delivery_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_middle"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/spacing_mxlarge"
+            android:layout_marginVertical="@dimen/spacing_medium"
+            android:background="@color/grey_60" />
+
+        <TextView
+            android:id="@+id/shipping_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_mxlarge"
+            android:text="Fast Delivery - Receive by 02/10/2020"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/grey_60" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_mxlarge"
+            android:text="Comment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/grey_60"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

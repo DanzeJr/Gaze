@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "833802248730",
+    "firebase_url": "https://gaze142.firebaseio.com",
+    "project_id": "gaze142",
+    "storage_bucket": "gaze142.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833802248730:android:b5a6055c351c6cc1df67a3",
+        "android_client_info": {
+          "package_name": "com.ecotioco.gaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833802248730-li48cr68744k7594hvr5jac35ib61764.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBfS9JwxVuXZuH1yACLh1ZrB16_CDJ9is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833802248730-li48cr68744k7594hvr5jac35ib61764.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

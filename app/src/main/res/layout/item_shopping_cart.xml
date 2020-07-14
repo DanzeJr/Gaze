@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lyt_parent"
+    style="@style/RippleStyleBlack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lyt_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_large">
+
+            <ImageView
+                android:layout_width="@dimen/cart_item_img"
+                android:layout_height="@dimen/cart_item_img"
+                android:layout_alignParentStart="true"
+                android:background="@color/grey_60"
+                android:src="@drawable/loading_placeholder"
+                android:tint="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/cart_item_img"
+                android:layout_height="@dimen/cart_item_img"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/spacing_middle"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/image"
+                android:layout_toStartOf="@+id/bt_remove_cart_item"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Glass Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_toEndOf="@+id/image"
+                android:text="Color: Red"
+                android:textColor="@color/grey_60" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/image"
+                android:text="x5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/grey_60" />
+
+            <ImageView
+                android:id="@+id/bt_remove_cart_item"
+                android:layout_width="@dimen/spacing_mlarge"
+                android:layout_height="@dimen/spacing_mlarge"
+                android:layout_marginStart="@dimen/spacing_xlarge"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_clear"
+                android:tint="@color/grey_40" />
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image"
+                android:layout_toEndOf="@+id/image"
+                android:text="10.5 USD"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrice"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginLeft="@dimen/spacing_middle"
+            android:layout_marginRight="@dimen/spacing_middle"
+            android:background="@color/grey_20" />
+
+    </LinearLayout>
+
+</com.balysv.materialripple.MaterialRippleLayout>
